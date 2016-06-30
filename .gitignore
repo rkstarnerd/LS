@@ -9,7 +9,7 @@ db/*.sqlite3
 /spec/reports/
 /test/tmp/
 /test/version_tmp/
-/tmp/
+/tmp/*
 
 /Thumbs.db
 /.DS_Store
