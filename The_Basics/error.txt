@@ -1,0 +1,10 @@
+SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+    from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+
+The above error means that in irb, on line 2 there is a syntax error
+where a } is expected, but a ) has been typed.
+
+This error can occur in instances such as these:
+
+  3.times { puts r.rand(101.75) )
+  names  = { gemille: 'ford' )
