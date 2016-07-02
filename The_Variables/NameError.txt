@@ -1,0 +1,9 @@
+NameError: undefined local variable or method `shoes' for main:Object
+  from (irb):3
+  from /usr/local/rvm/rubies/ruby-2.0.0-rc2/bin/irb:16:in `<main>'
+
+
+The above error tells me that on line 3 in irb, there is an undefined
+local variable or method 'shoes' for main.
+Shoes can either not be defined in the program or it could be defined
+within a block or method that and is not accessible by main.
