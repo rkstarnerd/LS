@@ -1,0 +1,12 @@
+x = [1, 2, 3, 4, 5]
+
+x.each do |a|
+  a + 1
+end
+
+What does the each method in the following program return after it is 
+finished executing?
+
+This returns the value of x, [1, 2, 3, 4, 5].
+You could use x.map instead of x.each if you wanted to return an array
+that was the result of adding 1 to each element.
