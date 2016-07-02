@@ -6,7 +6,20 @@ end
 
 scream("Yippeee")
 
-------------------------
+------------------------------------------------------
 
 The above program will not print anything to the screen
 because of the return reserved word.
+
+------------------------------------------------------
+
+def scream(words)
+  words = words + "!!!!"
+  puts words
+end
+
+scream("Yippeee")
+
+------------------------------------------------------
+
+The above program prints "Yippeee!!!!" to the screen.
