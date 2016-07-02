@@ -3,12 +3,16 @@ require 'date'
 # The Name class
 class Name < String
   def initialize(name)
-    @name = name
+    @name = capitalize_each(name)
     @day = DateTime.now.strftime('%A')
   end
 
   def greet
-    puts "Happy #{@day}, #{capitalize_each(@name)}!"
+    puts "Happy #{@day}, #{@name}!"
+  end
+
+  def output
+    10.times { puts @name } 
   end
 
   private
@@ -23,3 +27,4 @@ input = gets.chomp
 
 name = Name.new(input)
 name.greet
+name.output
