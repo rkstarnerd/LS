@@ -2,8 +2,10 @@ require 'date'
 
 # The Name class
 class Name < String
-  def initialize(name)
-    @name = capitalize_each(name)
+  def initialize(first, last)
+    @first = capitalize_each(first)
+    @last = capitalize_each(last)
+    @name = "#{@first} #{@last}"
     @day = DateTime.now.strftime('%A')
   end
 
@@ -12,7 +14,7 @@ class Name < String
   end
 
   def output
-    10.times { puts @name } 
+    10.times { puts @name }
   end
 
   private
@@ -22,9 +24,12 @@ class Name < String
   end
 end
 
-puts 'Type in your name:'
-input = gets.chomp
+puts 'Type in your first name:'
+first = gets.chomp
 
-name = Name.new(input)
+puts 'Type in your last name:'
+last = gets.chomp
+
+name = Name.new(first, last)
 name.greet
 name.output
