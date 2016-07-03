@@ -1,0 +1,19 @@
+arr = [15, 7, 18, 5, 12, 8, 5, 1]
+
+1. arr.index(5)
+
+2. arr.index[5]
+
+3. arr[5]
+
+
+Answers;
+
+1. This returns the index of element 5. It returns 3. 
+2. This returns a NoMethodError. 
+   arr.index can only accept an object as a parameter: 
+      arr.index(5) 
+   or a block: 
+      arr.index {|x| x == 18}
+   if anything at all.
+3. This returns the element at index 5. It returns 8.
