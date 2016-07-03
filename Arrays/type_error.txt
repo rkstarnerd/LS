@@ -1,0 +1,28 @@
+You run the following code...
+
+names = ['bob', 'joe', 'susan', 'margaret']
+names['margaret'] = 'jody'
+
+...and get the following error message:
+
+TypeError: no implicit conversion of String into Integer
+  from (irb):2:in `[]='
+  from (irb):2
+  from /Users/username/.rvm/rubies/ruby-2.0.0-p353/bin/irb:12:in `<main>'
+
+What is the problem and how can it be fixed?
+
+
+Answer:
+
+The problem is that 'margaret' is not an index, but the value of an 
+index.  
+
+The #[] method can take a single integer argument (a numeric index), 
+a pair of arguments (start and length) or a range. 
+(http://ruby-doc.org/core-2.3.0/Array.html#class-Array-label-Accessing+Elements)
+
+This can be fixed by changing it to names[3] = 'jody':
+
+names = ['bob', 'joe', 'susan', 'margaret']
+names[3] = 'jody'
