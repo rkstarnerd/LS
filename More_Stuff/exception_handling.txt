@@ -1,0 +1,5 @@
+Exception handling handles exceptions so your program doesn't blow up.
+With exception handling in your code you can be proactive and tell
+the program what should be done if an exception occurs.
+
+You can also allow for different actions depending on the type of exception.
