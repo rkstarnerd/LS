@@ -1,0 +1,5 @@
+What's the major difference between an Array and a Hash?
+
+The major difference between an Array and a Hash is that elements in
+an Array are accessed by indices whereas elements in a Hash are accessed
+by keys.

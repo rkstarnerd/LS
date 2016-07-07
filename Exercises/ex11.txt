@@ -1,0 +1,12 @@
+Look at several Rails/Ruby online API sources 
+and say which one you like best and why.
+
+For Ruby, I prefer ruby-doc.org.  I find the examples to be easy to 
+understand. I also can see clearly the type of objects that can be 
+passed into methods, if applicable, and what types of objects will
+be returned.
+
+For Rails, i prefer http://api.rubyonrails.org/.  I like how it's easy
+to search for particular methods on the side.
+It's similar to Dash, another program I use to quickly search and
+browse API documentation for different languages.
