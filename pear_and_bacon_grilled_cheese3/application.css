@@ -4,4 +4,6 @@ body {
 }
 
 h1 {color: cadetblue;}
-h2 {color: crimson;}
+
+#ingredients {color: tomato;}
+#directions   {color: navy;}
